@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './widgets/member1.dart';
+import './widgets/member2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,6 +59,20 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Padding(
                 padding: EdgeInsets.all(10.0),
                 child: Text("Darbi's Page", style: TextStyle(fontSize: 22)),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member2()));
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Color.fromARGB(255, 13, 78, 15),
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Matt's Page", style: TextStyle(fontSize: 22)),
               ),
             ),
           ],
