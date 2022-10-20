@@ -78,6 +78,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text("Matt's Page", style: TextStyle(fontSize: 22)),
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Member3()));
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Trevor's Page", style: TextStyle(fontSize: 22)),
+              ),
+            ),
           ],
         ),
       ),
