@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '/main.dart';
 
-class Member1 extends StatefulWidget {
-  const Member1({super.key});
+class Member2 extends StatefulWidget {
+  const Member2({super.key});
 
   @override
-  State<Member1> createState() => _Member1State();
+  State<Member2> createState() => _Member2State();
 }
 
-class _Member1State extends State<Member1> {
+class _Member2State extends State<Member2> {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -16,13 +16,14 @@ class _Member1State extends State<Member1> {
         children: <Widget>[
           Center(
             child: AppBar(
-              backgroundColor: Colors.purple,
-              title: Text("Darbi's Page", style: TextStyle(fontSize: 22)),
+              backgroundColor: Color.fromARGB(255, 13, 78, 15),
+              title: Text("Matt's Page", style: TextStyle(fontSize: 22)),
             ),
           ),
           const Padding(
             padding: EdgeInsets.all(15.0),
-            child: Text(("Darbi likes to listen to music"),
+            child: Text(
+                ("Matt enjoys playing with his two dogs whenever he can"),
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
           ),
           ElevatedButton(
