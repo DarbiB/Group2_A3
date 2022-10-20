@@ -29,8 +29,8 @@ class _Member2State extends State<Member2> {
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context);
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => MyApp()));
+              //Navigator.push(
+              //context, MaterialPageRoute(builder: (context) => MyApp()));
             },
             child: const Padding(
               padding: EdgeInsets.all(10.0),
