@@ -46,18 +46,21 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('Group 2 Application',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context);
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Member1()));
-              },
-              style: ElevatedButton.styleFrom(
-                primary: Colors.purple,
-              ),
-              child: const Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Text("Darbi's Page", style: TextStyle(fontSize: 22)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Member1()));
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.purple,
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text("Darbi's Page", style: TextStyle(fontSize: 22)),
+                ),
               ),
             ),
           ],
