@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './widgets/member1.dart';
 import './widgets/member2.dart';
 import './widgets/member3.dart';
+import './widgets/member4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,12 +53,12 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  //Navigator.pop(context);
+                  Navigator.pop(context);
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Member1()));
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purple,
+                  backgroundColor: Colors.purple,
                 ),
                 child: const Padding(
                   padding: EdgeInsets.all(10.0),
@@ -65,39 +66,44 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
-              child: ElevatedButton(
-                onPressed: () {
-                  // Navigator.pop(context);
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Member2()));
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Color.fromARGB(255, 13, 78, 15),
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Text("Matt's Page", style: TextStyle(fontSize: 22)),
-                ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member2()));
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 13, 78, 15),
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Matt's Page", style: TextStyle(fontSize: 22)),
               ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Member3()));
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Text("Trevor's Page", style: TextStyle(fontSize: 22)),
-                ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member3()));
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Trevor's Page", style: TextStyle(fontSize: 22)),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Member4()));
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightBlue,
+              ),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text("Laura's Page", style: TextStyle(fontSize: 22)),
               ),
             ),
           ],
