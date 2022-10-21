@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './widgets/member1.dart';
 import './widgets/member2.dart';
 import './widgets/member3.dart';
+import './widgets/member4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -100,6 +101,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            Padding(
+              padding:
+                  const EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Member4()));
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey,
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text("Laura's Page", style: TextStyle(fontSize: 22)),
+                ),
+              ),
+            )
           ],
         ),
       ),
